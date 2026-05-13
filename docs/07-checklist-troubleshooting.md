@@ -1,4 +1,4 @@
-# 행사 전 최종 체크리스트와 문제 해결
+# 최종 체크리스트와 문제 해결
 
 [메인 안내로 돌아가기](../README.md)
 
@@ -10,7 +10,7 @@
 - `ollama pull gemma4:e2b` 또는 `ollama pull gemma4:e4b` 완료
 - `ollama run gemma4:e2b`로 1회 답변 생성 성공
 - `Invoke-RestMethod http://localhost:11434/api/tags` 성공
-- 가능하면 전원 어댑터 지참
+- 가능하면 전원 어댑터 지참하기
 
 ### Apple Silicon Mac
 
@@ -19,7 +19,7 @@
 - `ollama pull gemma4:e2b` 또는 `ollama pull gemma4:e4b` 완료
 - `ollama run gemma4:e2b`로 1회 답변 생성 성공
 - `curl http://localhost:11434/api/tags` 성공
-- 가능하면 전원 어댑터 지참
+- 가능하면 전원 어댑터 지참하기
 
 ### Intel Mac
 
@@ -58,14 +58,14 @@ ollama pull gemma4:e4b
 ollama run gemma4:e4b
 ```
 
-Windows PowerShell에서는 위 두 줄을 그대로 실행해도 됩니다.
+Windows PowerShell에서도 위 두 줄을 그대로 실행하면 됩니다.
 
 ## 자주 생기는 문제
 
 ### `ollama` 명령을 찾을 수 없다고 나옵니다
 
 - 터미널이나 PowerShell 창을 새로 열어 다시 실행하세요.
-- macOS에서는 Ollama 앱을 한 번 실행하고 CLI 경로 연결 요청을 허용했는지 확인하세요.
+- macOS에서는 Ollama 앱을 한 번 실행하고 CLI 경로 연결 요청을 허용했는지 확인해 주세요.
 - 그래도 안 되면 공식 설치 프로그램을 다시 실행하세요.
 
 ### 모델 다운로드가 너무 오래 걸립니다

@@ -5,7 +5,7 @@
 ## 대상
 
 - macOS 14 Sonoma 이상
-- Apple M series: M1, M2, M3, M4 계열
+- macOS Apple Silicon 사용자
 - 터미널 사용
 
 ## 1. 내 Mac 확인
@@ -23,19 +23,19 @@ sw_vers -productVersion
 
 방법 A: 공식 앱 설치
 
-1. https://ollama.com/download/mac 으로 이동합니다.
+1. https://ollama.com/download/mac으로 이동합니다.
 2. macOS용 `ollama.dmg`를 다운로드합니다.
 3. DMG를 열고 Ollama 앱을 `Applications` 폴더로 옮깁니다.
 4. Ollama 앱을 한 번 실행합니다.
 5. CLI 경로 연결을 요청하면 허용합니다.
 
-방법 B: 터미널 설치 명령 사용
+방법 B: 터미널 설치 명령
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-일반 참가자는 방법 A를 권장합니다.
+일반 참가자는 방법 A가 더 편합니다.
 
 ## 3. 설치 확인
 
@@ -71,7 +71,7 @@ ollama pull gemma4:26b
 ollama run gemma4:e2b
 ```
 
-프롬프트가 열리면 아래 문장을 입력합니다.
+프롬프트가 열리면 다음 문장을 입력합니다.
 
 ```text
 Bwai Mongo 행사 준비 테스트입니다. Gemma 4의 장점을 세 가지로 요약해 주세요.
@@ -79,6 +79,6 @@ Bwai Mongo 행사 준비 테스트입니다. Gemma 4의 장점을 세 가지로 
 
 종료하려면 `/bye`를 입력하거나 `Ctrl + D`를 누릅니다.
 
-## 6. 다음 확인
+## 6. 다음 단계
 
-설치와 실행 테스트가 끝나면 [Ollama 서버 및 API 테스트](./06-server-api-test.md)를 진행하세요.
+설치와 실행 테스트가 끝나면 [Ollama 서버 및 API 테스트](./06-server-api-test.md)로 넘어가세요.
