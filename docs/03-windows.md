@@ -1,0 +1,74 @@
+# Windows 설치 가이드
+
+[메인 안내로 돌아가기](../README.md)
+
+## 대상
+
+- Windows 10 22H2 이상
+- PowerShell 사용 권장
+- NVIDIA 또는 AMD GPU가 있으면 최신 드라이버 설치 권장
+
+## 1. Ollama 설치
+
+방법 A: 공식 설치 프로그램 사용
+
+1. https://ollama.com/download/windows 로 이동합니다.
+2. `OllamaSetup.exe`를 다운로드합니다.
+3. 설치 프로그램을 실행합니다.
+4. 설치 후 PowerShell을 새로 엽니다.
+
+방법 B: PowerShell 설치 명령 사용
+
+```powershell
+irm https://ollama.com/install.ps1 | iex
+```
+
+회사/학교 장비에서는 보안 정책 때문에 스크립트 실행이 막힐 수 있습니다. 이 경우 방법 A의 설치 프로그램을 사용하세요.
+
+## 2. 설치 확인
+
+PowerShell에서 실행합니다.
+
+```powershell
+ollama --version
+```
+
+버전이 출력되면 설치가 된 상태입니다. 명령을 찾을 수 없다는 메시지가 나오면 PowerShell 창을 닫고 새로 열어 다시 실행하세요.
+
+## 3. Gemma 4 모델 다운로드
+
+8GB 또는 안전한 기본 준비:
+
+```powershell
+ollama pull gemma4:e2b
+```
+
+16GB 이상 권장 준비:
+
+```powershell
+ollama pull gemma4:e4b
+```
+
+32GB 이상에서 큰 모델을 실험할 경우:
+
+```powershell
+ollama pull gemma4:26b
+```
+
+## 4. 실행 테스트
+
+```powershell
+ollama run gemma4:e2b
+```
+
+프롬프트가 열리면 아래 문장을 입력해 보세요.
+
+```text
+Bwai Mongo 행사 준비 테스트입니다. Ollama가 무엇인지 한 문장으로 설명해 주세요.
+```
+
+종료하려면 `/bye`를 입력하거나 `Ctrl + D`를 누릅니다.
+
+## 5. 다음 확인
+
+설치와 실행 테스트가 끝나면 [Ollama 서버 및 API 테스트](./06-server-api-test.md)를 진행하세요.
