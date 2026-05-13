@@ -1,6 +1,7 @@
 # Bwai Mongo Ollama + Gemma 4 사전 준비 가이드
 
 Build with AI Mongo 참가자가 행사 전에 Ollama를 설치하고 Gemma 4 모델을 준비할 때 보는 안내입니다.
+
 기준 확인일: 2026-05-13
 
 ## 행사 전 준비
