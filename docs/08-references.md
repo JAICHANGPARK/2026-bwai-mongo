@@ -14,3 +14,8 @@
 ## Gemma 4
 
 - Google Gemma 4 출시 글: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+
+## Google Antigravity
+
+- Google Antigravity 다운로드: https://antigravity.google/download
+- Google Antigravity Codelab: https://codelabs.developers.google.com/getting-started-google-antigravity

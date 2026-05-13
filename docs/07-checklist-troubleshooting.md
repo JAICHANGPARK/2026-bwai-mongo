@@ -31,6 +31,13 @@
 - `curl http://localhost:11434/api/tags` 성공
 - 큰 모델을 무리하게 받지 않기
 
+### Google Antigravity를 사용할 경우
+
+- Antigravity 앱 실행 성공
+- 개인 Gmail 계정 로그인 성공
+- 첫 실행 설정 완료
+- 행사 자료 폴더 열기 성공
+
 ## 빠른 준비 명령 모음
 
 Windows PowerShell:
@@ -101,3 +108,10 @@ Invoke-RestMethod http://localhost:11434/api/tags
 ### `gemma4:latest`를 써도 되나요?
 
 가능은 하지만 행사 준비용으로는 권장하지 않습니다. `latest`가 나중에 다른 모델로 바뀔 수 있으므로 `gemma4:e2b`, `gemma4:e4b`처럼 명시적 태그를 사용하세요.
+
+### Google Antigravity 로그인이 안 됩니다
+
+- Google Codelab 기준으로 Antigravity preview는 개인 Gmail 계정으로 시작하는 흐름입니다.
+- 회사/학교 계정이나 관리형 장비에서는 계정 정책 때문에 막힐 수 있습니다.
+- 행사 전에 개인 Gmail 계정으로 앱 실행과 첫 설정까지 확인하세요.
+- 설치가 막히면 기존 VS Code 같은 코드 편집기를 준비해도 됩니다.
