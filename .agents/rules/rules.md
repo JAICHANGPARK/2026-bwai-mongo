@@ -1,0 +1,24 @@
+---
+trigger: always_on
+---
+
+# Session 1 Common Rules
+
+이 워크스페이스는 Gemma 4 Python 핸즈온 실습용입니다.
+
+항상 다음 규칙을 지키세요.
+
+- 모든 참가자 생성 파일은 `hands-on/session-1/work/` 아래에 둡니다.
+- Python 3.10 이상 기준으로 작성합니다.
+- `uv` 프로젝트 방식으로 작성합니다.
+- Python 파일에 PEP 723 inline script metadata를 넣지 않습니다.
+- 실행 명령은 `uv run python <file>` 형식을 사용합니다.
+- API 키와 설정은 `.env` 파일에서 `python-dotenv`로 읽습니다.
+- 실제 API 키가 들어간 `.env` 파일을 만들거나 출력하지 않습니다.
+- 공유 가능한 예시는 `.env.example`에만 작성합니다.
+- Gemini API 호출은 `google-genai`를 사용합니다.
+- Ollama 서버 API 호출은 `httpx`를 사용합니다.
+- 코드는 초보자가 읽을 수 있게 짧고 명확하게 작성합니다.
+- 오류 메시지는 한국어로 작성합니다.
+- 생성 후 가능한 경우 `py_compile`과 `--help` 실행으로 확인합니다.
+- 사용자가 명시적으로 요청하기 전에는 실제 Gemini API 호출이나 긴 Ollama 생성 호출을 실행하지 않습니다.
