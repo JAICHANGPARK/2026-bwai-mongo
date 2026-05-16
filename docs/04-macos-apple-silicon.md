@@ -19,7 +19,16 @@ sw_vers -productVersion
 
 결과가 `arm64`이면 Apple Silicon Mac입니다.
 
-## 2. Ollama 설치
+## 2. Python + uv 준비
+
+Python 핸즈온 실습을 진행할 경우 먼저 [Python + uv 설치 가이드](./09-python-uv-setup.md)를 완료하세요.
+
+완료 기준:
+
+- 터미널에서 `uv --version` 성공
+- 터미널에서 `uv run python --version` 성공
+
+## 3. Ollama 설치
 
 방법 A: 공식 앱 설치
 
@@ -37,7 +46,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 일반 참가자는 방법 A가 더 편합니다.
 
-## 3. 설치 확인
+## 4. 설치 확인
 
 터미널을 새로 열고 실행합니다.
 
@@ -45,7 +54,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama --version
 ```
 
-## 4. Gemma 4 모델 다운로드
+## 5. Gemma 4 모델 다운로드
 
 8GB 또는 안전한 기본 준비:
 
@@ -65,7 +74,7 @@ ollama pull gemma4:e4b
 ollama pull gemma4:26b
 ```
 
-## 5. 실행 테스트
+## 6. 실행 테스트
 
 ```bash
 ollama run gemma4:e2b
@@ -79,6 +88,6 @@ Bwai Mongo 행사 준비 테스트입니다. Gemma 4의 장점을 세 가지로 
 
 종료하려면 `/bye`를 입력하거나 `Ctrl + D`를 누릅니다.
 
-## 6. 다음 단계
+## 7. 다음 단계
 
 설치와 실행 테스트가 끝나면 [Ollama 서버 및 API 테스트](./06-server-api-test.md)로 넘어가세요.
