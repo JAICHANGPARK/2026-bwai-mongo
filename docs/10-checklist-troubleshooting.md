@@ -6,6 +6,8 @@
 
 ### Windows
 
+- PowerShell에서 `uv --version` 성공
+- `uv run python --version` 성공
 - PowerShell에서 `ollama --version` 성공
 - `ollama pull gemma4:e2b` 또는 `ollama pull gemma4:e4b` 완료
 - `ollama run gemma4:e2b`로 1회 답변 생성 성공
@@ -15,6 +17,8 @@
 ### Apple Silicon Mac
 
 - `uname -m` 결과가 `arm64`
+- `uv --version` 성공
+- `uv run python --version` 성공
 - `ollama --version` 성공
 - `ollama pull gemma4:e2b` 또는 `ollama pull gemma4:e4b` 완료
 - `ollama run gemma4:e2b`로 1회 답변 생성 성공
@@ -25,6 +29,8 @@
 
 - `uname -m` 결과가 `x86_64`
 - macOS 14 이상 확인
+- `uv --version` 성공
+- `uv run python --version` 성공
 - `ollama --version` 성공
 - `ollama pull gemma4:e2b` 완료
 - `ollama run gemma4:e2b`로 1회 답변 생성 성공
@@ -43,6 +49,8 @@
 Windows PowerShell:
 
 ```powershell
+uv --version
+uv run python --version
 ollama --version
 ollama pull gemma4:e2b
 ollama run gemma4:e2b
@@ -52,6 +60,8 @@ Invoke-RestMethod http://localhost:11434/api/tags
 macOS:
 
 ```bash
+uv --version
+uv run python --version
 ollama --version
 ollama pull gemma4:e2b
 ollama run gemma4:e2b
@@ -74,6 +84,16 @@ Windows PowerShell에서도 위 두 줄을 그대로 실행하면 됩니다.
 - 터미널이나 PowerShell 창을 새로 열어 다시 실행하세요.
 - macOS에서는 Ollama 앱을 한 번 실행하고 CLI 경로 연결 요청을 허용했는지 확인해 주세요.
 - 그래도 안 되면 공식 설치 프로그램을 다시 실행하세요.
+
+### `uv` 명령을 찾을 수 없다고 나옵니다
+
+- PowerShell이나 터미널 창을 새로 열어 다시 실행하세요.
+- macOS에서는 `exec $SHELL -l`을 실행한 뒤 다시 확인하세요.
+- 설치가 안 되어 있으면 [Python + uv 설치 가이드](./09-python-uv-setup.md)를 따라 설치하세요.
+
+### `uv run python --version`이 실패합니다
+
+Python 버전 준비가 안 된 상태일 수 있습니다. [Python + uv 설치 가이드](./09-python-uv-setup.md)의 Python 설치 확인 절차를 따라 주세요.
 
 ### 모델 다운로드가 너무 오래 걸립니다
 

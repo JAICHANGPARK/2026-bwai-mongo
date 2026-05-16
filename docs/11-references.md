@@ -11,9 +11,17 @@
 - Ollama OpenAI 호환 API 문서: https://docs.ollama.com/api/openai-compatibility
 - Ollama Gemma 4 모델 페이지: https://ollama.com/library/gemma4
 
+## Python + uv
+
+- uv 설치 문서: https://docs.astral.sh/uv/getting-started/installation/
+- uv Python 설치 문서: https://docs.astral.sh/uv/guides/install-python/
+
 ## Gemma 4
 
 - Google Gemma 4 출시 글: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+- Gemini API Quickstart: https://ai.google.dev/gemini-api/docs/quickstart
+- Gemini API 키 안내: https://ai.google.dev/gemini-api/docs/api-key
+- Google Gen AI SDK for Python: https://googleapis.github.io/python-genai/
 
 ## Google Antigravity
 
