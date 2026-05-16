@@ -11,8 +11,8 @@
 | `.agents/workflows/session-1-02-ollama-server-api.md` | Antigravity workflow 2 |
 | `prompts/01-gemini-api-gemma4-system-prompt.md` | Gemini API 예제 생성용 시스템 프롬프트 |
 | `prompts/02-ollama-server-api-system-prompt.md` | Ollama 서버 API 예제 생성용 시스템 프롬프트 |
-| `work/` | 참가자가 생성할 코드 위치 |
-| `reference/` | 강사용 참고 구현 |
+| `work/` | 생성 코드 위치 |
+| `reference/` | 참고 구현 |
 
 ## 진행 시간
 
@@ -198,9 +198,9 @@ OpenAI 호환 API:
 uv run python 02_ollama_server_api.py --endpoint openai
 ```
 
-## 강사용 참고
+## 참고 구현
 
-`reference/`에는 각 프롬프트가 만들도록 의도한 최소 구현이 들어 있습니다. 참가자에게 먼저 보여주기보다는, 생성 결과가 크게 벗어났을 때 비교용으로 사용하세요.
+`reference/`에는 각 프롬프트가 만들도록 의도한 최소 구현이 들어 있습니다. 생성 결과가 크게 벗어났을 때 비교용으로 사용하세요.
 
 ## Antigravity 수동 설정
 

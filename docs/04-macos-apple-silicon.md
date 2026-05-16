@@ -5,7 +5,7 @@
 ## 대상
 
 - macOS 14 Sonoma 이상
-- macOS Apple Silicon 사용자
+- macOS Apple Silicon Mac
 - 터미널 사용
 
 ## 1. 내 Mac 확인
@@ -44,7 +44,7 @@ Python 핸즈온 실습을 진행할 경우 먼저 [Python + uv 설치 가이드
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-일반 참가자는 방법 A가 더 편합니다.
+일반적인 준비에는 방법 A가 더 편합니다.
 
 ## 4. 설치 확인
 

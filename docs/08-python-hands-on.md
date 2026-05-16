@@ -13,8 +13,8 @@
 | 3 | [`.agents/workflows/session-1-02-ollama-server-api.md`](../.agents/workflows/session-1-02-ollama-server-api.md) | Ollama 서버 API 예제 생성 workflow |
 | 4 | [`prompts/01-gemini-api-gemma4-system-prompt.md`](../hands-on/session-1/prompts/01-gemini-api-gemma4-system-prompt.md) | AI Studio용 Gemini API 시스템 프롬프트 |
 | 5 | [`prompts/02-ollama-server-api-system-prompt.md`](../hands-on/session-1/prompts/02-ollama-server-api-system-prompt.md) | AI Studio용 Ollama 서버 API 시스템 프롬프트 |
-| 6 | `work/` | 참가자가 생성할 코드 위치 |
-| 7 | [`reference/`](../hands-on/session-1/reference) | 강사용 참고 구현 |
+| 6 | `work/` | 생성 코드 위치 |
+| 7 | [`reference/`](../hands-on/session-1/reference) | 참고 구현 |
 
 ## 가장 짧은 준비와 실행 명령
 
