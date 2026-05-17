@@ -1,5 +1,5 @@
 ---
-description: # Session 1 01 Gemini API Gemma 4
+description: Session 1 01 Gemini API Gemma 4
 ---
 
 # Session 1 01 Gemini API Gemma 4
@@ -24,7 +24,7 @@ hands-on/session-1/work/.env.example
 
 - 참가자는 이미 `hands-on/session-1/work`에서 `uv init --bare --name gemma4-session-1 .`를 실행했습니다.
 - 참가자는 이미 `uv venv`를 실행했습니다.
-- 참가자는 이미 `uv add google-genai python-dotenv httpx`를 실행했습니다.
+- 참가자는 이미 `uv add google-genai google-adk python-dotenv httpx`를 실행했습니다.
 - Python 파일에 PEP 723 inline script metadata를 넣지 마세요.
 - 실행 방식은 `uv run python 01_gemini_api_gemma4.py`입니다.
 
@@ -49,8 +49,11 @@ hands-on/session-1/work/.env.example
 ```dotenv
 GEMINI_API_KEY=YOUR_API_KEY
 GEMINI_MODEL=gemma-4-26b-a4b-it
+ADK_GEMINI_MODEL=gemma-4-31b-it
 OLLAMA_HOST=http://localhost:11434
+OLLAMA_API_BASE=http://localhost:11434
 OLLAMA_MODEL=gemma4:e2b
+ADK_OLLAMA_MODEL=gemma4:e2b
 ```
 
 생성 후 가능하면 다음 검사를 실행하세요.

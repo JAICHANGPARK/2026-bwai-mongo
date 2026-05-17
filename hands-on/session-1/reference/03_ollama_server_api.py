@@ -2,7 +2,7 @@
 
 Run after Ollama is running:
     cd hands-on/session-1/reference
-    uv run python 02_ollama_server_api.py
+    uv run python 03_ollama_server_api.py
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ def load_env() -> None:
     except ImportError:
         return
 
+    # Load values from reference/.env first, then from the current directory.
     load_dotenv(Path(__file__).with_name(".env"))
     load_dotenv()
 
@@ -82,6 +83,7 @@ def request_json(
     payload: dict[str, Any] | None = None,
     timeout: int = 30,
 ) -> dict[str, Any]:
+    # Import httpx here so argparse --help can run before dependencies exist.
     import httpx
 
     with httpx.Client(timeout=timeout) as client:
@@ -97,6 +99,7 @@ def request_json(
 
 def ensure_server_and_model(host: str, model: str) -> None:
     try:
+        # /api/tags is a lightweight way to check both server and local models.
         data = request_json("GET", f"{host.rstrip('/')}/api/tags")
     except Exception as exc:
         print(
@@ -118,6 +121,7 @@ def ensure_server_and_model(host: str, model: str) -> None:
 
 
 def call_ollama_chat(args: argparse.Namespace) -> str:
+    # Ollama native chat API expects messages plus stream=False for one JSON reply.
     payload = {
         "model": args.model,
         "messages": [
@@ -139,6 +143,7 @@ def call_ollama_chat(args: argparse.Namespace) -> str:
 
 
 def call_openai_compatible(args: argparse.Namespace) -> str:
+    # Ollama also exposes an OpenAI-compatible endpoint for client portability.
     payload = {
         "model": args.model,
         "messages": [
@@ -160,6 +165,7 @@ def call_openai_compatible(args: argparse.Namespace) -> str:
 def main() -> int:
     load_env()
     args = parse_args()
+    # Fail fast with a friendly message before starting a long generation call.
     ensure_server_and_model(args.host, args.model)
 
     try:

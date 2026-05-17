@@ -30,6 +30,7 @@ def load_env() -> None:
     except ImportError:
         return
 
+    # Load a script-local .env first, then allow the current shell/project env.
     load_dotenv(Path(__file__).with_name(".env"))
     load_dotenv()
 
@@ -62,6 +63,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def build_config(args: argparse.Namespace):
+    # Import google-genai only when we are about to call the API.
+    # This keeps `--help` usable before dependencies are installed.
     from google.genai import types
 
     thinking_config = (
@@ -78,6 +81,7 @@ def main() -> int:
     load_env()
     args = parse_args()
 
+    # Stop before importing or calling the SDK if no API key is configured.
     if not (os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")):
         print(
             "GEMINI_API_KEY 또는 GOOGLE_API_KEY 환경 변수를 먼저 설정해 주세요.\n"
@@ -89,6 +93,7 @@ def main() -> int:
     from google import genai
 
     client = genai.Client()
+    # generate_content sends the prompt and optional system/thinking settings.
     response = client.models.generate_content(
         model=args.model,
         contents=args.prompt,
