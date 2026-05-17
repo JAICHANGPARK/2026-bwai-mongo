@@ -43,6 +43,8 @@
 - 개인 Gmail 계정 로그인 성공
 - 첫 실행 설정 완료
 - 행사 자료 폴더 열기 성공
+- `.agents/rules`, `.agents/workflows`, `.agents/skills` 확인
+- Python 핸즈온을 진행할 경우 `/session-1-01-gemini-api`, `/session-1-02-adk-gemini-api`, `/session-1-03-ollama-server-api`, `/session-1-04-adk-ollama` slash command 확인
 
 ## 빠른 준비 명령 모음
 
@@ -135,3 +137,10 @@ Invoke-RestMethod http://localhost:11434/api/tags
 - 회사/학교 계정이나 관리형 장비에서는 계정 정책 때문에 막힐 수 있습니다.
 - 행사 전에 개인 Gmail 계정으로 앱 실행과 첫 설정까지 확인하세요.
 - 설치가 막히면 기존 VS Code 같은 코드 편집기를 준비해도 됩니다.
+
+### Antigravity workflow가 보이지 않습니다
+
+- 저장소 루트가 아니라 하위 폴더를 연 상태인지 확인하세요.
+- Agent 패널 상단의 `...` 메뉴에서 Customizations를 열고 Workspace Rules, Workflows, Skills를 확인하세요.
+- 자동 인식이 안 되면 `.agents/workflows/`의 Markdown 내용을 Workspace workflow로 직접 추가하세요.
+- 자세한 설정 위치는 [Google Antigravity 설치 가이드](./07-google-antigravity.md)를 확인하세요.

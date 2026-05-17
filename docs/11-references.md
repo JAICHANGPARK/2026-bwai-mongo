@@ -22,8 +22,11 @@
 - Gemini API Quickstart: https://ai.google.dev/gemini-api/docs/quickstart
 - Gemini API 키 안내: https://ai.google.dev/gemini-api/docs/api-key
 - Google Gen AI SDK for Python: https://googleapis.github.io/python-genai/
+- Google ADK Ollama 모델 문서: https://adk.dev/agents/models/ollama/
 
 ## Google Antigravity
 
 - Google Antigravity 다운로드: https://antigravity.google/download
 - Google Antigravity Codelab: https://codelabs.developers.google.com/getting-started-google-antigravity
+- Google Antigravity Rules / Workflows: https://antigravity.google/docs/rules-workflows
+- Google Antigravity Skills: https://antigravity.google/docs/skills
